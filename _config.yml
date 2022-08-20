@@ -18,20 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: thelinuxEnthusiast.com blog website
+title: TheLinuxEnthusiast
 email: darrenfoley015@gmail.com
 description: >- 
-        Personal blog website for writing Tech articles and other useful information.
-baseurl: "/blog"
+        Personal blog website which includes tech articles, cheatsheets and other useful information.
+baseurl:  
+lang: en
 url: "https://thelinuxenthusiast.com"
 domain: "thelinuxenthusiast.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+github_username: AnalyticsEnthusiast
 
 # Build settings
-theme: minima
+remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
   - jekyll-feed
+
+#paginate: 5
+#paginate_path: "/blog/page:num"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

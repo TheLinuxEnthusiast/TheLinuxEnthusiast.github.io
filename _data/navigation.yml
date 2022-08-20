@@ -1,0 +1,6 @@
+- name: About
+  link: /about.html
+- name: Cheatsheets
+  link: /cheatsheet.html
+- name: Blog
+  link: /blog/index.html
