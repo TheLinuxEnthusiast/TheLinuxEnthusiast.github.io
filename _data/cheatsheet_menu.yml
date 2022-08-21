@@ -1,0 +1,16 @@
+- label: Cheatsheets
+  items:
+     - name: Git
+       link: #
+       items:
+       - name: Beginner Commands Sheet
+         link: /cheatsheets/git-beginner-commands.html
+       - name: Intermediate Commands Sheet
+         link: /cheatsheets/git-intermediate-commands.html
+       - name: Advanced Commands Sheet
+         link: /cheatsheets/git-advanced-commands.html
+     - name: Linux
+       link: # 
+       items:
+       - name: POSIX shell
+         link: /
