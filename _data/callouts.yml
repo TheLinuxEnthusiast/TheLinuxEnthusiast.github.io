@@ -1,0 +1,26 @@
+style: is-light
+height: is-medium
+items:
+  - title: Posts 
+    subtitle: Technology Blog posts
+    icon: fa-wrench
+    description: >
+      Data engineering, linux, web minimalism.
+    call_to_action_name: Posts
+    call_to_action_link: /blog/index.html
+  - title: Visit my Linkedin
+    subtitle: Personal Linkedin Profile 
+    icon: fa-linkedin
+    icon_brand: true
+    description: >
+      My Linkedin Profile if you need to reach out.
+    call_to_action_name: Linkedin
+    call_to_action_link: https://www.linkedin.com/in/darren-foley-profile
+  - title: Visit my github
+    subtitle: AnalyticsEnthusiast
+    icon: fa-github
+    icon_brand: true
+    description: >
+      Link to my github profile
+    call_to_action_name: GitHub
+    call_to_action_link: https://github.com/AnalyticsEnthusiast
