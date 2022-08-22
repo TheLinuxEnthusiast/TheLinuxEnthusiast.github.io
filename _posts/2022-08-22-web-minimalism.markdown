@@ -3,30 +3,21 @@ layout: post
 title:  "What is web minimalism?"
 date:   2022-08-22 20:00:00 +0100
 categories: frontend minimalism
+author: "Darren Foley"
 description: "Post discussing the perils of modern website UI."
-tags: ["Web", "Frontend", "Minimalism"]
+tags: ["Web", "Frontend", "Minimalism", "UX"]
 hero_darken: true
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-Jekyll requires blog post files to be named according to the following format:
+<b>Web Minimalism</b> is simplifing the web interface for end users. Its an approach to website UI design that places emphasis on clarity, purpose, functionality and intentionality over adding features that provide little benefit. Everything else is removed; popups, trackers, banners or anything else that could increase cognitive overhead for end users. Given that a large proportion of the web is serving static content, usually blogs or articles, a large proportion of the modern web could be simplified. This is best shown visually, so I've included some examples below to explain what I mean along with some principals of UX that I think are very important.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+<br>
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+### Bloated Websites
 
-Jekyll also offers powerful support for code snippets:
+<br>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+### Minimal Websites
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<br>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
