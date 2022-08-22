@@ -1,0 +1,34 @@
+style: is-light
+height: is-medium
+items:
+  - title: Posts 
+    subtitle: Technology Blog posts
+    icon: fa-wrench
+    description: >
+      Data engineering, linux, web minimalism.
+    call_to_action_name: Posts
+    call_to_action_link: /blog/index.html
+  - title: Visit my Linkedin
+    subtitle: Personal Linkedin Profile 
+    icon: fa-linkedin
+    icon_brand: true
+    description: >
+      My Linkedin Profile if you need to reach out.
+    call_to_action_name: Linkedin
+    call_to_action_link: https://www.linkedin.com/in/darren-foley-profile
+  - title: Visit my GitHub
+    subtitle: AnalyticsEnthusiast
+    icon: fa-github
+    icon_brand: true
+    description: >
+      Link to my github profile.
+    call_to_action_name: GitHub
+    call_to_action_link: https://github.com/AnalyticsEnthusiast
+  - title: Cheatsheets 
+    subtitle: List of useful Cheatsheets
+    icon: fa-lightbulb
+    icon_brand: false
+    description: >
+      Useful commands for various tools.
+    call_to_action_name: Cheatsheets
+    call_to_action_link: /cheatsheet.html
