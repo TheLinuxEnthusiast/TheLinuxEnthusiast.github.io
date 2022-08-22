@@ -12,5 +12,5 @@
      - name: Linux
        link: # 
        items:
-       - name: POSIX shell
-         link: /
+       - name: Linux AWK Commands
+         link: /cheatsheets/linux-awk.html
