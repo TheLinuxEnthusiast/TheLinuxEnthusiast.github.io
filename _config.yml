@@ -43,6 +43,9 @@ collections:
         cheatsheets:
            output: true
            permalink: "/:collection/:name"
+        posts:
+           output: true
+           permalink: "/blog/:year/:month/:day/:title:output_ext"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
