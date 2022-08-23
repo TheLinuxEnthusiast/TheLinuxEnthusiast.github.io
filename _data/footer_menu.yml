@@ -1,7 +1,7 @@
 - name: Home
   link: /index.html
 - name: About 
-  link: /about/
+  link: /about.html
 - name: Cheatsheets
   link: /cheatsheet.html
 - name: Posts
