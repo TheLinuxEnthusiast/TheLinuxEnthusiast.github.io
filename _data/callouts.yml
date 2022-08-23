@@ -16,6 +16,14 @@ items:
       My Linkedin Profile if you need to reach out.
     call_to_action_name: Linkedin
     call_to_action_link: https://www.linkedin.com/in/darren-foley-profile
+  - title: Cheatsheets 
+    subtitle: List of useful Cheatsheets
+    icon: fa-copy
+    icon_brand: false
+    description: >
+      Useful commands for various tools.
+    call_to_action_name: Cheatsheets
+    call_to_action_link: /cheatsheet.html
   - title: Visit my GitHub
     subtitle: AnalyticsEnthusiast
     icon: fa-github
@@ -24,11 +32,3 @@ items:
       Link to my github profile.
     call_to_action_name: GitHub
     call_to_action_link: https://github.com/AnalyticsEnthusiast
-  - title: Cheatsheets 
-    subtitle: List of useful Cheatsheets
-    icon: fa-lightbulb
-    icon_brand: false
-    description: >
-      Useful commands for various tools.
-    call_to_action_name: Cheatsheets
-    call_to_action_link: /cheatsheet.html
