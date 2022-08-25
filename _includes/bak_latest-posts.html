@@ -1,0 +1,21 @@
+
+<p class="title is-4">Latest Posts</p>
+
+  <ol>
+  {% for post in site.posts limit:3 %}
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%b %-d, %Y" }}</li>
+  {% endfor %}
+  </ol>
+
+
+<br>
+<br>
+
+<p class="title is-4">Latest Cheatsheets</p>
+
+
+  <ol>
+    {% for sheet in site.cheatsheets reversed limit:3 %}
+        <li><a href="{{ site.baseurl }}{{ sheet.url }}">{{ sheet.title }}</a> - {{ sheet.date | date: "%b %-d, %Y" }}</li>
+    {% endfor %}
+  </ol>
