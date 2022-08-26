@@ -18,3 +18,17 @@ callouts: callouts
 
 <p>This is a jekyll based static website hosted in github. I've decided to go with the <b>Bulma Clean Theme</b> developed by C.S Rhymes. A link to his personal website can be found <a href="https://www.csrhymes.com/">here</a> or at the bottom of each page. If you would like to install this theme for yourself you should visit the <a href="https://www.csrhymes.com/bulma-clean-theme/docs/">documentation</a>.</p>
 
+<br>
+
+<h3>Post Tags</h3>
+
+{% for tag in site.tags %}
+  {% capture tag_name %}{{ tag[0] }}{% endcapture %}
+  {% include tag.html tag=tag_name style="is-light" %}
+  <!-- <h4>{{ tag[0] }}</h4> 
+  <ul>
+    {% for post in tag[1] limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul> -->
+{% endfor %}
