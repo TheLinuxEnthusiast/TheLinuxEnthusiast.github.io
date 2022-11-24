@@ -14,3 +14,12 @@
        items:
        - name: Linux AWK Commands
          link: /cheatsheets/linux-awk
+     - name: Terraform
+       link: #
+       items:
+       - name: Beginner Terraform Commands & Concepts
+         link: /cheatsheets/terraform-beginner
+       - name: Intermediate Terraform Commands & Concepts
+         link: /cheatsheets/terraform-intermediate
+       - name: Advanced Terraform Commands & Concepts
+         link: /cheatsheets/terraform-advanced

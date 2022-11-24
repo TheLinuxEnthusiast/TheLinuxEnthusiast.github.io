@@ -83,7 +83,7 @@ $ awk -F':' '{ print $2 }' data.txt
 
 <h4>Structure of awk programs</h4>
 
-<p>awk has three code blocks; a BEGIN block, a main processing block, & an END block.</p> 
+<p>awk has three code blocks; a BEGIN block, a main processing block, & an END block. The BEGIN block is executed once before processing, the main block is executed for each line of the input and the END is executed once at the end of processing.</p> 
 
 ```
 #!/usr/bin/awk -f
