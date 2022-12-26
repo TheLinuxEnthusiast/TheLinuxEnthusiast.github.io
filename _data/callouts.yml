@@ -25,10 +25,10 @@ items:
   #   call_to_action_name: Cheatsheets
   #   call_to_action_link: /cheatsheet.html
   - title: Visit my GitHub
-    subtitle: AnalyticsEnthusiast
+    subtitle: TheLinuxEnthusiast
     icon: fa-github
     icon_brand: true
     description: >
       Link to my github profile.
     call_to_action_name: GitHub
-    call_to_action_link: https://github.com/AnalyticsEnthusiast
+    call_to_action_link: https://github.com/TheLinuxEnthusiast
