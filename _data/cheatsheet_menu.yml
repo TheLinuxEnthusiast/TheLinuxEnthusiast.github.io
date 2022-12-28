@@ -5,8 +5,6 @@
        items:
        - name: Beginner Commands Sheet
          link: /cheatsheets/git-beginner-commands
-       - name: Intermediate Commands Sheet
-         link: /cheatsheets/git-intermediate-commands
        - name: Advanced Commands Sheet
          link: /cheatsheets/git-advanced-commands
      - name: Linux
@@ -19,7 +17,5 @@
        items:
        - name: Beginner Terraform Commands & Concepts
          link: /cheatsheets/terraform-beginner
-       - name: Intermediate Terraform Commands & Concepts
-         link: /cheatsheets/terraform-intermediate
        - name: Advanced Terraform Commands & Concepts
          link: /cheatsheets/terraform-advanced
