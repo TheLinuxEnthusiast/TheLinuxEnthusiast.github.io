@@ -1,5 +1,5 @@
 ---
-title: "Beginner Git/Github Commands"
+title: "Beginner Git Commands"
 layout: post
 name: "git-beginner-commands"
 tags: ["Git"]
@@ -9,10 +9,7 @@ show_sidebar: false
 menubar: cheatsheet_menu
 ---
 
-<br>
-
-<h4>Beginner Git/Github commands and concepts</h4>
-
+Beginner git cheatsheet covering commands for working with local repositories in addition to working with remote repositories. Details on working with Github are included below as it is by far the most popular amongst developers. 
 
 **Setting up a local repository**
 
