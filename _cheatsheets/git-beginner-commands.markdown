@@ -78,4 +78,10 @@ Use --local to change just the current repository settings.
 
 **Adding Changes to the staging area**
 
+Git has three main areas for files; current working directory, staging area and git database. Use the staging area for breaking up a large change into multiple commits. 
+
+```
+> git add file1 file2 file3
+```
+
 
