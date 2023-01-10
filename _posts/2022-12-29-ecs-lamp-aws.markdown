@@ -18,9 +18,11 @@ In order to follow along with this tutorial it is assumed that you have the foll
 
 3. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli) - The open source version should be sufficent here. Make sure you are comfortable with using/finding terraform modules.
 
-4. **AWS Account** - You will also need access to an AWS Account - The Free tier account should be sufficent. Make sure to install aws cli V2 [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). We will be taking advantage of a number of different services from AWS; ECR, ECS, S3 etc.
+In addition, you will need access to the following accounts.
 
-5. **Circleci Account** - If you do not already have a Circleci account, setup a free account [here](https://circleci.com/docs/first-steps/). For open source projects, you can get 400,000 free credits for CI builds.
+1. **AWS Account** - You will also need access to an AWS Account - The Free tier account should be sufficent. Make sure to install aws cli V2 [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). We will be taking advantage of a number of different services from AWS; ECR, ECS, S3 etc.
+
+2. **Circleci Account** - If you do not already have a Circleci account, setup a free account [here](https://circleci.com/docs/first-steps/). For open source projects, you can get 400,000 free credits for CI builds.
 
 In this article I will outline how to deploy a containerized ecommerce application to AWS ECS Service using terraform. The application we are deploying is a sample ecommerce website created by KodeKloud. It can be found on github [here](https://github.com/kodekloudhub/learning-app-ecommerce).
 
@@ -829,12 +831,44 @@ smoke_test_curl:
 
 ## Step-4: Run and Test pipeline
 
-We can trigger our pipeline manually from the circleci UI or we can submit a pull request to the master branch. You should see the following from circleci.
+We can trigger our pipeline manually from the circleci UI or we can submit a pull request to the master branch.
+
+1 - Create an initial blue environment.
+
+```
+terraform apply -var-file=variables/development.tfvars -auto-approve
+```
+
+It may take a few minutes for everything to spin up.
+
+
+2 - From the aws console, go to ec2 -> Load Balancers and grab the load balancer URL and check if its reachable. In my case the url was http://ecomm-alb-1612499162.eu-west-1.elb.amazonaws.com:80 
+
+You should see something like the screenshot below.
+
+![Frontend Blue Env](/images/frontend_view_blue.png)
+
+
+3 - Create a new feature branch locally and open the ./index.php file. Make a change to the frontend, in my case I changed the text "Find everything accordingly" -> "Find everything you need here!"
+
+
+4 - Submit a pull request to github and trigger the circleci pipeline
+
+It may take up to 8min for the entire build and deployment to run.
 
 ![Successful Circleci build](/images/Successful_build.png)
 
-<br>
 
-When you go to the dns of the load balancer you should see the following.
+5 - As the traffic is being distributed check the application url again and you should see the change start to appear. Notice how the subheader text is now reading "Find everything you need here!". 
 
-![Successful Front end view]()
+![Successful frontend change](/images/frontend_view_green.png)
+
+
+6 - Keep refreshing the URL and the change should now start to appear 100% of the time. The Blue/green deployment should have sucessfully migrated to the updated version.
+
+
+7 - Once you're happy with the pipeline, don't forget to destroy any resources you have running. Also, remember to delete any ECR and S3 resources. 
+
+```
+terraform destroy -var-file=variables/development.tfvars -var is_green="true" -var is_blue="false" -var traffic_distribution="green" -auto-approve
+```
