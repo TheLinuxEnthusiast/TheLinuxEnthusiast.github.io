@@ -27,7 +27,7 @@ lang: en
 url: "https://thelinuxenthusiast.com"
 domain: "thelinuxenthusiast.com"
 #twitter_username: jekyllrb
-github_username: AnalyticsEnthusiast
+github_username: thelinuxenthusiast 
 
 # Build settings
 remote_theme: chrisrhymes/bulma-clean-theme
@@ -46,6 +46,14 @@ collections:
         posts:
            output: true
            permalink: "/blog/:year/:month/:day/:title:output_ext"
+
+# Analytics
+analytics:
+ provider: "google-gtag"
+ google:
+  measurement_id: "G-NYQJYPTXRH"
+  anonymize_ip: false
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
