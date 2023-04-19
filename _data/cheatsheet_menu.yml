@@ -19,3 +19,8 @@
          link: /cheatsheets/terraform-beginner
        - name: Advanced Terraform Commands & Concepts
          link: /cheatsheets/terraform-advanced
+     - name: SQL
+       link: # 
+       items:
+       - name: Advanced SQL Concepts
+         link: /cheatsheets/sql-advanced
