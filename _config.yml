@@ -47,12 +47,14 @@ collections:
            output: true
            permalink: "/blog/:year/:month/:day/:title:output_ext"
 
+
+google_analytics: G-NYQJYPTXRH
 # Analytics
-analytics:
- provider: "google-gtag"
- google:
-  measurement_id: "G-NYQJYPTXRH"
-  anonymize_ip: false
+#analytics:
+# provider: "google-gtag"
+# google:
+#  measurement_id: "G-NYQJYPTXRH"
+#  anonymize_ip: false
 
 
 # Exclude from processing.
